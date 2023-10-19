@@ -13,6 +13,12 @@ ENV DB_POSTGRESDB_PORT=$PGPORT
 ENV DB_POSTGRESDB_USER=$PGUSER
 ENV DB_POSTGRESDB_PASSWORD=$PGPASSWORD
 
+
+ENV N8N_HOST=n8n-production-a2f9.up.railway.app
+ENV WEBHOOK_URL=https://n8n-production-a2f9.up.railway.app
+ENV WEBHOOK_TUNNEL_URL=https://n8n-production-a2f9.up.railway.app
+ENV VUE_APP_URL_BASE_API=https://n8n-production-a2f9.up.railway.app/
+
 ARG ENCRYPTION_KEY
 
 ENV N8N_ENCRYPTION_KEY=$ENCRYPTION_KEY
